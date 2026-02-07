@@ -141,7 +141,7 @@ export default function App() {
             </li>
             ))}
         </ul>
-        <CalcButton label="Clear" onclick={clear} />
+        <CalcButton label={"Clear"} onclick={clear} />
       </div>
   </div>
   );
