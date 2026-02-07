@@ -80,6 +80,10 @@ export default function App() {
     addToHistory({type:"power", a, b, result:res});
   }
 
+  function clear() {
+    setHistory([]);
+  }
+
   return (
     <div className="app">
       <h2>Simple Calculator</h2>
@@ -114,6 +118,7 @@ export default function App() {
     </div>
       <div className="history">
       <h4>History</h4>
+      
         <ul>
           {history.map((item, index) => (
           <li key={index}>
@@ -136,6 +141,7 @@ export default function App() {
             </li>
             ))}
         </ul>
+        <CalcButton label="Clear" onclick={clear} />
       </div>
   </div>
   );
