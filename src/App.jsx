@@ -106,7 +106,6 @@ export default function App() {
     
 
     <div className="buttons">
-        <CalcButton label={"hi"} onClick={add} />
         <CalcButton label={"+"} onclick={add} />
         <CalcButton label={"-"} onclick={sub} />
         <CalcButton label={"*"} onclick={mul} />
